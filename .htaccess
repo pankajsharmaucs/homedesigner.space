@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Rule to handle product page with 4 dynamic URL parameters
+RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/([a-z0-9-]+)/([a-z0-9-]+)/?$ product.php?category=$1&subCat=$2&product=$3&pid=$4 [L,QSA]
+
+RewriteRule ^([a-z0-9-]+)/([a-z0-9-]+)/([a-z0-9-]+)/?$ category.php?category=$1&subCat=$2&product=$3 [L,QSA]
+RewriteRule ^category/([a-z0-9-]+)/([a-z0-9-]+)/?$ category.php?category=$1&subCat=$2 [L,QSA]
+RewriteRule ^category/([a-z0-9-]+)/?$ category.php?category=$1 [L,QSA]
+
+# SEO-friendly URLs for Other Pages
+RewriteRule ^shop$ /shop [L,R=301]
+RewriteRule ^product-category$ /product-category [L,R=301]
+RewriteRule ^category$ /category/wooden [L,R=301]
+RewriteRule ^contact$ /contact [L,R=301]
+RewriteRule ^aboutus$ /aboutus [L,R=301]
+
+# 404 page handling (optional)
+ErrorDocument 404 http://localhost/home/404.php

@@ -17,34 +17,34 @@
                <div class="col-lg-3 col-sm-6">
                   <h1 class="customer_text">Wooden Products</h1>
                   <ul class="footer_links">
-                     <li><a href="product/wooden-furnitures">Wooden Furnitures</a></li>
-                     <li><a href="product/wooden-Sofa">Wooden Sofa</a></li>
-                     <li><a href="product/wooden-Chair">Wooden Chair</a></li>
-                     <li><a href="product/wooden-table">Wooden Table</a></li>
-                     <li><a href="product/wooden-bed">Wooden  Bed</a></li>
-                     <li><a href="product/wooden-dinning-table">Wooden Dinning Table</a></li>
+                     <li><a href="product/wooden/furnitures">Wooden Furnitures</a></li>
+                     <li><a href="product/wooden/Sofa">Wooden Sofa</a></li>
+                     <li><a href="product/wooden/Chair">Wooden Chair</a></li>
+                     <li><a href="product/wooden/table">Wooden Table</a></li>
+                     <li><a href="product/wooden/bed">Wooden  Bed</a></li>
+                     <li><a href="product/wooden/dinning-table">Wooden Dinning Table</a></li>
                   </ul>
 
                </div>
                <div class="col-lg-3 col-sm-6">
                   <h1 class="customer_text">Acrylic Products</h1>
                   <ul class="footer_links">
-                     <li><a href="product/acrylic-dinnig-table">Acrylic Carving</a></li>
-                     <li><a href="product/acrylic-bed">Acrylic Carving</a></li>
-                     <li><a href="product/acrylic-chair">Acrylic Chair</a></li>
-                     <li><a href="product/acrylic-railing">Acrylic railing</a></li>
+                     <li><a href="product/acrylic/dinnig-table?">Acrylic Carving</a></li>
+                     <li><a href="product/acrylic/bed?">Acrylic Carving</a></li>
+                     <li><a href="product/acrylic/chair?">Acrylic Chair</a></li>
+                     <li><a href="product/acrylic/railing?">Acrylic railing</a></li>
                   </ul>
 
                </div>
                <div class="col-lg-3 col-sm-6">
                   <h1 class="customer_text">UseFul Links</h1>
                   <ul class="footer_links">
-                     <li><a href="product/wooden-furnitures">Shop</a></li>
-                     <li><a href="product/wooden-Sofa">Products Category</a></li>
-                     <li><a href="product/acrylic-chair">Wooden</a></li>
-                     <li><a href="product/acrylic-railing">Acrylic</a></li>
-                     <li><a href="product/acrylic-railing">Contact</a></li>
-                     <li><a href="product/acrylic-railing">Abouts Company</a></li>
+                     <li><a href="shop">Shop</a></li>
+                     <li><a href="product-category">Products Category</a></li>
+                     <li><a href="category/wooden">Wooden</a></li>
+                     <li><a href="category/acrylic">Acrylic</a></li>
+                     <li><a href="contact">Contact</a></li>
+                     <li><a href="aboutus">About Us</a></li>
                   </ul>
                </div>
             </div>
