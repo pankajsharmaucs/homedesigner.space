@@ -251,7 +251,10 @@ button {
     background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: 100%;
+    background-blend-mode: multiply;
+    background-color: rgba(32, 32, 32, 0.95);
 }
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -260,13 +263,13 @@ button {
     float: left;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: #111111;
+    color: #f3f3f3;
     font-size: 18px;
     text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link:focus, 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #ffb607;
+    color: #f71b1b;
 }
 
 .mr-auto, .mx-auto {
@@ -325,7 +328,7 @@ button {
     width: 100%;
     float: left;
     font-size: 100px;
-    color: #090808;
+    color: #ffffff;
     text-align: center;
     text-transform: uppercase;
 }
@@ -333,7 +336,7 @@ button {
     width: 50%;
     margin: 0 auto;
     font-size: 16px;
-    color: #090808;
+    color: #ffffff;
     text-align: center;
 }
 .contact_bt_main{
@@ -400,6 +403,7 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
+    background:#f4f5f7;
 }
 .services_taital{
     width: 100%;
@@ -470,7 +474,7 @@ button {
     width: 100%;
     float: left;
     /* background-color: #ffb607; */
-    background-color: #ffffff;
+    background-color: #f4f5f7;
     height: auto;
     padding-bottom: 90px;
 }
@@ -519,6 +523,7 @@ button {
     width: 100%;
     float: left;
     padding-bottom: 90px;
+    background: #f4f5f7;
 }
 .our_text{
     width: 100%;
@@ -846,7 +851,7 @@ a:hover {
 .contact_section {
     width: 100%;
     float: left;
-    background-image: url(../images/contact-bg.png);
+    background:#f4f5f7;
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -860,7 +865,7 @@ a:hover {
     width: 100%;
     float: left;
     font-size: 36px;
-    color: #ffffff;
+    color: #181818;
 
 }
 .email-bt {
