@@ -7,16 +7,16 @@
                            <div class="swiper mySwiper">
                               <div class="swiper-wrapper">
                                  <div class="swiper-slide">
-                                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                 <img src="<?= $base_url?>/images/logo1.png" />
                                  </div>
                                  <div class="swiper-slide">
-                                 <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                 <img src="<?= $base_url?>/images/logo1.png" />
                                  </div>
                                  <div class="swiper-slide">
-                                 <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                 <img src="<?= $base_url?>/images/logo1.png" />
                                  </div>
                                  <div class="swiper-slide">
-                                 <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                 <img src="<?= $base_url?>/images/logo1.png" />
                                  </div>
                               </div>
                               <div class="swiper-pagination"></div>
