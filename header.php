@@ -1,6 +1,29 @@
 <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <div class="logo"><h1 class="font-weight-bold text-white" >HOME DESIGNER </h1></div>
+
+               <div class="logo row align-items-end">
+                     <div class="d-md-block d-none mx-2 slider3">
+                        <!-- Swiper -->
+                           <div class="swiper mySwiper">
+                              <div class="swiper-wrapper">
+                                 <div class="swiper-slide">
+                                 <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                                 </div>
+                                 <div class="swiper-slide">
+                                 <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                                 </div>
+                                 <div class="swiper-slide">
+                                 <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                                 </div>
+                                 <div class="swiper-slide">
+                                 <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                 </div>
+                              </div>
+                              <div class="swiper-pagination"></div>
+                           </div>
+                     </div>
+                     <h3 class="font-weight-bold text-dark" >HOME DESIGNER </h3>
+               </div>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>

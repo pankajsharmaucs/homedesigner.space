@@ -74,6 +74,64 @@
       <script src="js/custom.js"></script>
       <!-- javascript --> 
       <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>    
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>  
+      
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+         var swiper = new Swiper(".slider1 .mySwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            pagination: {
+            el: ".slider1 .swiper-pagination",
+            clickable: true,
+            },
+         });
+      </script>
+
+      <!-- ========Slider 2======== -->
+
+      <script>
+         var swiper = new Swiper(".slider2 .mySwiper", {
+         effect: "coverflow",
+         grabCursor: true,
+         centeredSlides: true,
+         slidesPerView: "auto",
+         coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+         },
+         pagination: {
+            el: ".slider2 .swiper-pagination",
+         },
+         loop: true,
+         });
+      </script>
+
+      <!-- ============cude===slider===== -->
+      <script>
+         var swiper = new Swiper(".slider3 .mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            loop: true, // Enable looping
+            autoplay: {
+                  delay: 1500, // Adjust the delay (in ms) between slides
+                  disableOnInteraction: false, // Ensures autoplay doesn't stop when interacting with the swiper
+            },
+            cubeEffect: {
+                  shadow: true,
+                  slideShadows: true,
+                  shadowOffset: 20,
+                  shadowScale: 0.94,
+            }
+         });
+      </script>
+
+
    </body>
 </html>

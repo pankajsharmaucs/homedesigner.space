@@ -26,6 +26,79 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+      <style>
+     
+      .slider1 .swiper {
+            width: 100%;
+            height: 100%;
+      }
+
+      .slider1.swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+
+      .slider1.swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+      }
+
+      .slider1 .swiper-slide {
+            width: 85%;
+      }
+
+
+
+      .slider2 .swiper {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+      }
+
+      .slider2 .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+      }
+
+      .slider2 .swiper-slide img {
+            display: block;
+            width: 100%;
+      }
+
+
+      .slider3 .swiper {
+            width: 50px;
+            height: 50px;
+            /* position: absolute; */
+            /* left: 50%; 
+            top: 100%;
+            margin-left: -150px;
+            margin-top: -150px; */
+      }
+
+      .slider3 .swiper-slide {
+            background-position: center;
+            background-size: cover;
+      }
+
+      .slider3 .swiper-slide img {
+            display: block;
+            width: 100%;
+      }
+
+             
+  </style>
+
       <?php
       
       $base_url="http://localhost/home";

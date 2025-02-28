@@ -8,276 +8,158 @@
    <body>
       <!-- header section start -->
       <div class="header_section">
-
          <?php include('header.php'); ?>
-
          <!-- banner section start -->
-         <div class="banner_section layout_padding">
-            <div class="container">
-               <div id="costum_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <h1 class="furniture_text">FURNITURE</h1>
-                        <p class="there_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some fo</p>
-                        <div class="contact_bt_main">
-                           <div class="contact_bt"><a href="contact.php">Contact Us</a></div>
-                        </div>
+         <div class="container-fluid p-0">
+              <div class="slider1">
+                  <div class="swiper mySwiper">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img width="100%" src="<?= $base_url ?>/images/slider1/image1.jpg" /></div>
+                        <div class="swiper-slide"><img width="100%" src="<?= $base_url ?>/images/slider1/image2.jpg" /></div>
+                        <div class="swiper-slide"><img width="100%" src="<?= $base_url ?>/images/slider1/image3.jpg" /></div>
+                        <div class="swiper-slide"><img width="100%" src="<?= $base_url ?>/images/slider1/image4.jpg" /></div>
+                        <div class="swiper-slide"><img width="100%" src="<?= $base_url ?>/images/slider1/image5.jpg" /></div>
+                        <div class="swiper-slide"><img width="100%" src="<?= $base_url ?>/images/slider1/image6.jpg" /></div>
                      </div>
-                     <div class="carousel-item">
-                        <h1 class="furniture_text">FURNITURE</h1>
-                        <p class="there_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some fo</p>
-                        <div class="contact_bt_main">
-                           <div class="contact_bt"><a href="contact.php">Contact Us</a></div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <h1 class="furniture_text">FURNITURE</h1>
-                        <p class="there_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some fo</p>
-                        <div class="contact_bt_main">
-                           <div class="contact_bt"><a href="contact.php">Contact Us</a></div>
-                        </div>
-                     </div>
+                     <div class="swiper-pagination"></div>
                   </div>
-                  <a class="carousel-control-prev" href="#costum_slider" role="button" data-slide="prev">
-                  <i class=""><img src="images/left-arrow.png"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#costum_slider" role="button" data-slide="next">
-                  <i class=""><img src="images/right-arrow.png"></i>
-                  </a>
-               </div>
-            </div>
+              </div>
          </div>
          <!-- banner section end -->
       </div>
       <!-- header section end -->
+
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+                  <div class="col-md-6">
+                     <h1 class="about_text">About Us</h1>
+                     <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableThere are many variations of passages of Lorem Ipsum available, but the majority have able</p>
+                     <div class="read_bt1"><a href="#">Read More</a></div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="image_1"><img src="images/img-1.png"></div>
+                  </div>
+            </div>
+         </div>
+      </div>
+      <!-- about section end -->
 
       <!-- services section start -->
       <div class="services_section layout_padding">
          <div class="container">
             <h1 class="services_taital">our services</h1>
             <p class="many_taital">There are many variations of passages of Lorem Ipsum </p>
-            <div class="services_section2 layout_padding">
-               <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="icon_1"><img src="images/icon-1.png"></div>
-                     <h2 class="furnitures_text">Furnitures</h2>
-                     <p class="dummy_text">There are many variations of passages of Lorem Ipsum available, but the</p>
-                     <div class="read_bt_main">
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="icon_1"><img src="images/icon-2.png"></div>
-                     <h2 class="furnitures_text">office</h2>
-                     <p class="dummy_text">There are many variations of passages of Lorem Ipsum available, but the</p>
-                     <div class="read_bt_main">
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="icon_1"><img src="images/icon-3.png"></div>
-                     <h2 class="furnitures_text">Home</h2>
-                     <p class="dummy_text">There are many variations of passages of Lorem Ipsum available, but the</p>
-                     <div class="read_bt_main">
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <div class="icon_1"><img src="images/icon-4.png"></div>
-                     <h2 class="furnitures_text">badroom</h2>
-                     <p class="dummy_text">There are many variations of passages of Lorem Ipsum available, but the</p>
-                     <div class="read_bt_main">
-                        <div class="read_bt"><a href="#">Read More</a></div>
-                     </div>
-                  </div>
-               </div>
+            <div class="container">
+                  
             </div>
          </div>
       </div>
       <!-- services section end -->
-      <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6">
-                  <h1 class="about_text">About Us</h1>
-                  <p class="lorem_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believableThere are many variations of passages of Lorem Ipsum available, but the majority have able</p>
-                  <div class="read_bt1"><a href="#">Read More</a></div>
-               </div>
-               <div class="col-md-6">
-                  <div class="image_1"><img src="images/img-1.png"></div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- about section end -->
-      <!-- furnitures section start -->
-      <div class="furnitures_section layout_padding">
-         <div class="container">
-            <h1 class="our_text">OUR furnitures</h1>
-            <p class="ipsum_text">There are many variations of passages of Lorem Ipsum </p>
-            <div class="furnitures_section2 layout_padding">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="container_main">
-                        <img src="images/img-2.png" alt="Avatar" class="image">
-                        <div class="overlay">
-                           <a href="#" class="icon" title="User Profile">
-                           <i class="fa fa-search"></i>
-                           </a>
-                        </div>
-                     </div>
-                     <h3 class="temper_text">Tempor incididunt ut labore et dolore</h3>
-                     <p class="dololr_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="container_main">
-                        <img src="images/img-3.png" alt="Avatar" class="image">
-                        <div class="overlay">
-                           <a href="#" class="icon" title="User Profile">
-                           <i class="fa fa-search"></i>
-                           </a>
-                        </div>
-                     </div>
-                     <h3 class="temper_text">Tempor incididunt ut labore et dolore</h3>
-                     <p class="dololr_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- furnitures section end -->
-      <!-- who section start -->
-      <div class="who_section layout_padding">
+      
+       <!-- who section start -->
+       <div class="who_section layout_padding">
          <div class="container">
             <h1 class="who_taital">who we are ?</h1>
             <h4 class="designer_text">DESIGNERS & INNOVATORS</h4>
             <p class="lorem_ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut</p>
          </div>
          <div class="get_bt_main">
-            <div class="get_bt"><a href="#">Get A Quote</a></div>
+            <div class=""><a href="#" class="btn btn-outline-light">Get A Quote</a></div>
          </div>
       </div>
       <!-- who section end -->
+       
+      <!-- furnitures section start -->
+      <div class="furnitures_section layout_padding">
+         <div class="container">
+            <h1 class="our_text">OUR furnitures</h1>
+            <p class="ipsum_text">There are many variations of passages of Lorem Ipsum </p>
+             <!-- banner section start -->
+             <div class="container">
+                  <div class="row slider2">
+                      <!-- Swiper -->
+                     <div class="swiper mySwiper ">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                           </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                     </div>
+                  </div>
+            </div>
+            <!-- banner section end -->
+         </div>
+      </div>
+      <!-- furnitures section end -->
+     
       <!-- projects section start -->
       <div class="projects_section layout_padding">
          <div class="container">
             <h1 class="our_text">Our projects</h1>
             <p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-            <div id="main_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="projects_section2">
-                        <div class="container_main2">
-                           <div class="row">
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-6.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
+            <div class="container">
+                  <div class="row slider2">
+                      <!-- Swiper -->
+                     <div class="swiper mySwiper ">
+                        <div class="swiper-wrapper">
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                           </div>
+                           <div class="swiper-slide">
+                           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
                            </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                      </div>
                   </div>
-                  <div class="carousel-item">
-                     <div class="projects_section2">
-                        <div class="container_main1">
-                           <div class="row">
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-6.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="projects_section2">
-                        <div class="container_main1">
-                           <div class="row">
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-4.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-5.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                              <div class="col-sm-4">
-                                 <div class="container_main1">
-                                    <img src="images/img-6.png" alt="Avatar" class="image" style="width:100%">
-                                    <h1 class="modern_text">Modern home designe</h1>
-                                    <div class="middle">
-                                       <div class="text">VIEW MORE</div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-               <i class="fa fa-angle-left"></i>
-               </a>
-               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-               <i class="fa fa-angle-right"></i>
-               </a>
             </div>
          </div>
       </div>
