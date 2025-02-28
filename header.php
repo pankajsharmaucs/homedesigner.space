@@ -7,19 +7,18 @@
                            <div class="swiper mySwiper">
                               <div class="swiper-wrapper">
                                  <div class="swiper-slide">
-                                 <img src="<?= $base_url?>/images/logo1.png" />
+                                    <img  class="d-md-block d-none"  src="<?= $base_url?>/images/logo2.png" />
                                  </div>
                                  <div class="swiper-slide">
-                                 <img src="<?= $base_url?>/images/logo1.png" />
+                                    <img  class="d-md-block d-none"  src="<?= $base_url?>/images/logo2.png" />
                                  </div>
                                  <div class="swiper-slide">
-                                 <img src="<?= $base_url?>/images/logo1.png" />
+                                    <img  class="d-md-block d-none"  src="<?= $base_url?>/images/logo2.png" />
                                  </div>
                                  <div class="swiper-slide">
-                                 <img src="<?= $base_url?>/images/logo1.png" />
+                                    <img  class="d-md-block d-none"  src="<?= $base_url?>/images/logo2.png" />
                                  </div>
                               </div>
-                              <div class="swiper-pagination"></div>
                            </div>
                      </div>
                      <h3 class="font-weight-bold text-dark" >HOME DESIGNER </h3>

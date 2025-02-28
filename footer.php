@@ -58,8 +58,8 @@
       </div>
 
       <!-- WhatsApp Icon -->
-      <a href="https://wa.me/918800637982" target="_blank" id="whatsapp-button">
-         <img src="images/WhatsApp_icon.png" alt="WhatsApp" />
+      <a href="https://wa.me/918800637982?text=We are interested in purchasing your Products.Could we schedule a meeting to discuss placing an order? Looking forward to your reply." target="_blank" id="whatsapp-button">
+               <img src="images/WhatsApp_icon.png" alt="WhatsApp" />
       </a>
       
       <!-- copyright section end -->
