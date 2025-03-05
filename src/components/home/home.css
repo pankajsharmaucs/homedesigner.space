@@ -1,0 +1,24 @@
+.swiper-button-next,
+.swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background-size: 20px;
+}
+
+.mySwiperactive {
+  border: 3px solid #ff4d21!important;
+}
+
+/* Adjust navigation button size on smaller screens */
+@media (max-width: 768px) {
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 70px;
+    /* Increase the size */
+    height: 70px;
+    /* Increase the size */
+    background-size: 15px;
+    /* Adjust icon size */
+  }
+}
