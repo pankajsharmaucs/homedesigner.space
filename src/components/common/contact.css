@@ -5,7 +5,7 @@
 
 .contact_us {
     background-color: #f1f1f1;
-    padding: 120px 0px;
+    padding-top: 10% 0px;
 }
 
 .contact_inner {
@@ -113,7 +113,8 @@ button.contact_form_submit {
 }
 
 .map_sec {
-    padding: 50px 0px;
+    /* padding: 150px 0px; */
+    padding-bottom:20%;
 }
 
 .map_inner h4,
@@ -199,7 +200,7 @@ button.contact_form_submit {
     }
 
     .map_sec {
-        padding: 30px 0px;
+        /* padding: 30px 0px; */
     }
 
     .map_inner h4,
