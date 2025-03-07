@@ -1,0 +1,7 @@
+# Enable mod_rewrite
+RewriteEngine On
+
+# Rewrite all requests to index.html except for files that exist (e.g., CSS, JS, images)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]

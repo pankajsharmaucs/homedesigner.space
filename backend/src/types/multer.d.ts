@@ -1,11 +1,12 @@
-// types/multer.d.ts
 import { Request } from 'express';
-import { File } from 'multer';  // Correct import for File type from multer
 
 declare global {
   namespace Express {
     interface Request {
-      file?: File;
+      file?: Express.Multer.File; // Single file
+      files?: { [fieldname: string]: Express.Multer.File[] }; // Multiple files
     }
   }
 }
+
+export {}; // Ensure it's treated as a module

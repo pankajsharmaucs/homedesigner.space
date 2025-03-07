@@ -1,13 +1,17 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
-import Card from '../card/Card';
-
+// import Card from '../card/Card';
+import { Swiper as SwiperClass } from 'swiper'; // Import the class itself
+import { Swiper } from 'swiper/react'; // Import Swiper for usage in the component
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const [activeIndex, setActiveIndex] = useState(0); // Track the active index
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperClass | null>(null);
+
+  const slider = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg'];
 
   return (
     <>
@@ -21,30 +25,25 @@ const Home = () => {
             className="mySwiper2"
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)} // Update activeIndex when slide changes
           >
-            <SwiperSlide>
-              <img src="/images/slider1/image1.jpg" alt="Image 1" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/images/slider1/image2.jpg" alt="Image 2" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/images/slider1/image3.jpg" alt="Image 3" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/images/slider1/image4.jpg" alt="Image 4" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/images/slider1/image5.jpg" alt="Image 5" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src="/images/slider1/image6.jpg" alt="Image 6" />
-            </SwiperSlide>
+
+
+            {slider.map((image, index) => (
+              <SwiperSlide key={index} >
+                <img
+                  src={`/images/slider1/${image}`}
+                  style={{ maxHeight: '500px', width: '100%' }}
+                  alt={`Thumbnail ${index + 1}`}
+                />
+              </SwiperSlide>
+            ))}
+
           </Swiper>
 
           {/* Thumbs Swiper (thumbnail navigation) */}
           <Swiper
-            onSwiper={setThumbsSwiper} // Set thumbsSwiper instance when initialized
-            spaceBetween={3}
+            // onSwiper={setThumbsSwiper} // Set thumbsSwiper instance when initialized
+            onSwiper={(swiper: SwiperClass) => setThumbsSwiper(swiper)}
+            spaceBetween={1}
             freeMode={true}
             watchSlidesProgress={true}
             modules={[FreeMode, Navigation, Thumbs]}
@@ -62,13 +61,13 @@ const Home = () => {
             }}
           >
             {/* Thumbnail slides */}
-            {['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg', 'image5.jpg', 'image6.jpg'].map((image, index) => (
+            {slider.map((image, index) => (
               <SwiperSlide key={index}
                 className={index === activeIndex ? 'mySwiperactive' : ''}
               >
                 <img
                   src={`/images/slider1/${image}`}
-                  style={{ height: '100px' }}
+                  style={{ maxHeight: '70px' }}
                   alt={`Thumbnail ${index + 1}`}
                 />
               </SwiperSlide>
@@ -93,8 +92,10 @@ const Home = () => {
                 success, ensuring every product is crafted with precision, creativity, and integrity. Under his leadership,
                 <strong>Home Designer</strong> continues to inspire the team to push boundaries and uphold the values
                 of excellence and trust in everything we do.</h5>
-              <div className="read_bt1">
-                <a href="/about">Read More</a>
+              <div className="row justify-content-md-start justify-content-center">
+                <div className="read_bt1">
+                  <Link to="/about">All Projects</Link>
+                </div>
               </div>
             </div>
             <div className="col-md-6 text-md-start text-center">
@@ -107,21 +108,6 @@ const Home = () => {
       </div >
       {/* about section end */}
 
-      {/* services section start */}
-      <div className="services_section layout_padding">
-        <div className="container">
-          <h1 className="services_taital">Our services</h1>
-          <p className="many_taital">
-            Expert Craftsmanship in Wooden & Acrylic Furniture, Customized Sofa, Bed, and Carving Solutions
-          </p>
-          <div className="container">
-            <main className="grid">
-              <Card />
-            </main>
-          </div>
-        </div>
-      </div>
-      {/* services section end */}
 
       {/* who section start */}
       <div className="who_section layout_padding">
@@ -141,9 +127,9 @@ const Home = () => {
         </div>
         <div className="get_bt_main">
           <div className="">
-            <a href="#" className="btn btn-outline-light">
+            <Link to="/contact" className="btn btn-outline-light">
               Get A Quote
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -195,6 +181,13 @@ const Home = () => {
               {/* Pagination element */}
               <div className="swiper-pagination"></div>
             </div>
+
+            <div className="row justify-content-md-start justify-content-center">
+              <div className="read_bt1">
+                <Link to="/projects">All Projects</Link>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

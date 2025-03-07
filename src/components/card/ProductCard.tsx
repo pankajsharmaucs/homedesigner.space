@@ -10,7 +10,7 @@ interface ProductProps {
 
 function ProductCard({ product }: ProductProps) {
     return (
-        <div className="productCard">
+        <div className="productCard shadow p-2">
             <div className="cont">
                 <div className="product-card">
                     <div className="product-card__image">

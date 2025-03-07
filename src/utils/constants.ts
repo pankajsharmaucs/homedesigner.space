@@ -1,20 +1,34 @@
 
-export const BASE_URL= window.location.hostname === 'localhost'
-? 'http://localhost:5173'  // Local development URL
-: 'https://www.homedesigner.space';  // Production URL
+export const BASE_URL = window.location.hostname === 'localhost'
+    ? 'https://www.homedesigner.space'  // Local development URL
+    : 'https://www.homedesigner.space';  // Production URL
 
-export const BASE_API_URL= window.location.hostname === 'localhost'
-// ? 'http://localhost:3000'  // Local development URL
-? 'https://www.homedesigner.space'  // Local development URL
-: 'https://www.homedesigner.space';  // Production URL
+
+export const BASE_IMAGE_URL = window.location.hostname === 'localhost'
+    ? 'http://www.localhost:5000'  // Local development URL
+    : 'https://www.homedesigner.space';  // Production URL
+
+
+export const BASE_API_URL = window.location.hostname === 'localhost'
+    ? 'http://localhost:5000'  // Local development URL
+    // ? 'https://www.homedesigner.space'  // Local development URL
+    : 'https://www.homedesigner.space';  // Production URL
 
 export const GET_ALL_BLOG = window.location.hostname === 'localhost'
-    ? '/backend/api/blog'  // Local development URL
+    ? '/api/blog'  // Local development URL
     : '/backend/api/blog';  // Production URL
 
 export const CREATE_ALL_BLOG = window.location.hostname === 'localhost'
-    ? '/backend/api/blog'  // Local development URL
+    ? '/api/blog'  // Local development URL
     : '/backend/api/blog';  // Production URL
+
+export const GET_ALL_PROJECTS = window.location.hostname === 'localhost'
+    ? '/api/projects'  // Local development URL
+    : '/backend/api/projects';  // Production URL
+
+export const CREATE_PROJECT = window.location.hostname === 'localhost'
+    ? '/api/projects'  // Local development URL
+    : '/backend/api/projects';  // Production URL
 
 export const WEBSITE_NAME = window.location.hostname === 'localhost'
     ? 'HOME'  // Local development URL

@@ -3,13 +3,13 @@ import Team from './Team';
 
 function About() {
   return (
-    <div style={{marginBottom:'20%',padding:"30px"}}>
+    <div style={{marginBottom:'20%',paddingTop:"30px"}}>
       <section className="about-section">
         <div className="container">
           <div className="row clearfix">
             {/*Content Column*/}
             <div className="content-column col-md-6 col-sm-12 col-xs-12">
-              <div className="inner-column">
+              <div className="">
                 <div className="sec-title">
                   <div className="title">About Us</div>
                   <h2>
@@ -41,7 +41,7 @@ function About() {
                   <img src="https://i.ibb.co/vQbkKj7/about.jpg" alt="" />
                   <div className="overlay-box">
                     <div className="year-box">
-                      <span className="number">5</span>Years <br /> Experience <br />{" "}
+                      <span className="number">30</span>Years <br /> Experience <br />{" "}
                       Working
                     </div>
                   </div>
@@ -53,14 +53,13 @@ function About() {
       </section>
 
       {/* Proprietor Section */}
-      <section className="proprietor-section py-5">
+      <section className="proprietor-section pb-5">
         <div className="container">
-            <div className='col-12 text-center py-4 '><h1 style={{ fontSize:"34px"}}  >Our Team</h1></div>
-          <div className="row ">
-              <Team />
-              <Team />
-              <Team />
-              <Team />
+            <div className='col-12 text-center  '><h1 style={{ fontSize:"34px"}}  >Our Team</h1></div>
+          <div className="row justify-content-center">
+              <Team detail={{name:"Mr. Rishi Raj Sharma", designation:"Founder & Proprietor", image:"/images/team/image1.png"}} />
+              <Team detail={{name:"Mr. Pankaj Sharma", designation:"Marketing and Sales Head", image:"/images/team/image2.png"}} />
+              {/* <Team detail={{name:"Goolu Sharma", designation:"Sales Head", image:"/images/team/image1.jpg"}} /> */}
           </div>
         </div>
       </section>

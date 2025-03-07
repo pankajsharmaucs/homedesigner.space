@@ -1,32 +1,35 @@
 // src/utils/api.ts
 import axios from 'axios';
-import { BASE_API_URL, GET_ALL_BLOG, CREATE_ALL_BLOG } from './constants';
+import { BASE_API_URL, CREATE_PROJECT, GET_ALL_PROJECTS } from './constants';
 
 // Create axios instance
 const api = axios.create({
   baseURL: BASE_API_URL, // Use the full URL including the protocol
 });
 
-// Fetch all blogs
-export const fetchBlogs = async () => {
+
+// Fetch all Projects
+export const fetchProjects = async () => {
   try {
-    const response = await api.get(GET_ALL_BLOG); // Only append the relative path
-    console.log(response);
-    
+    const response = await api.get(GET_ALL_PROJECTS); // Only append the relative path
+    // console.log(response);
     return response.data;
   } catch (error) {
-    console.error('Error fetching blogs:', error);
+    console.error('Error fetching Projects:', error);
     throw error;
   }
 };
 
-// Create a new blog
-export const createBlog = async (blogData: any) => {
+
+// Create a new Projects
+export const createProject = async (data: any) => {
   try {
-    const response = await api.post(CREATE_ALL_BLOG, blogData); // Post to the relative path
+    const response = await api.post(CREATE_PROJECT, data); // Post to the relative path
     return response.data;
   } catch (error) {
-    console.error('Error creating blog:', error);
+    console.error('Error creating Projects:', error);
     throw error;
   }
 };
+
+

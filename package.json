@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://homedesigner.space",
+  "homepage": "https://www.homedesigner.space",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

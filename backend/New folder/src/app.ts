@@ -4,30 +4,25 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import fs from 'fs';
-import projectRoutes from './routes/projectRoutes';
+import blogRoutes from './routes/blogRoutes';
+import projectRoutes from './routes/projectRoutes'; // Import project routes
 
 // Load environment variables
 dotenv.config();
 
 const app = express();
-
-app.use(cors());
-
+app.use(cors({
+  origin: '*',  // Allow all origins
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(express.json());
 
-// Define the upload directory **in the root of the project**
-const uploadDir = path.join(process.cwd(), 'uploads');
-
-// Ensure the 'uploads' directory exists in the root
-if (!fs.existsSync(uploadDir)) {
-  fs.mkdirSync(uploadDir, { recursive: true });
-}
-
-// Serve static files for uploaded images and videos from the root uploads folder
-//app.use('/uploads', express.static(uploadDir));
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+// Serve static files for uploaded images and videos
+app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
 // Use blog and project routes
+app.use('/api', blogRoutes);
 app.use('/api', projectRoutes);
 
 // Basic route to check if the server is running
@@ -37,6 +32,7 @@ app.get('/', (req: Request, res: Response) => {
 
 // List all uploaded images
 app.get('/images', (req: Request, res: Response) => {
+  const uploadDir = path.join(process.cwd(), 'uploads');
   fs.readdir(uploadDir, (err, files) => {
     if (err) return res.status(500).json({ error: 'Unable to read directory' });
 
@@ -46,7 +42,7 @@ app.get('/images', (req: Request, res: Response) => {
 });
 
 // MongoDB connection
-mongoose.connect(process.env.MONGODB_URI as string)
+mongoose.connect(process.env.MONGODB_URI as string, {})
   .then(() => console.log("Connected to MongoDB (projects database)"))
   .catch((err) => console.log("MongoDB connection error:", err));
 

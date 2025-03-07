@@ -5,8 +5,8 @@ const AdminDashboard = () => {
   return (
     <div className="container">
       <h2>Admin Dashboard</h2>
-      <Link to="/admin/add-blog" className="btn btn-success">
-        Add New Blog Post
+      <Link to="/admin/add-projects" className="btn btn-success">
+        Add New Project
       </Link>
       {/* Other dashboard content */}
     </div>

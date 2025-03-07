@@ -20,13 +20,13 @@ function Products() {
       <div className="conatiner">
       <div className='col-12 text-center '><h1 style={{ fontSize:"34px"}}  >Our Products</h1></div>
 
-        <div className="row" style={{ overflowY: "scroll", marginTop: "3%", marginBottom: "20%" }}>
+        <div className="row p-md-4 p-2" style={{ overflowY: "scroll", marginTop: "3%", marginBottom: "20%" }}>
 
           {
             productList.length ?
               productList.map((product) => {
                 return (
-                  <div className="col-md-4">
+                  <div className="col-md-4 my-3">
                     <ProductCard product={product} key={product.id} />
                   </div>
                 )

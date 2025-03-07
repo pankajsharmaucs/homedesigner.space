@@ -53,11 +53,11 @@ const Header = () => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to="/products" onClick={handleMenuItemClick}>
                   Products
                 </Link>
-              </li>
+              </li> */}
 
               {/* <li className="nav-item">
                 <Link className="nav-link" to="/services" onClick={handleMenuItemClick}>
@@ -72,7 +72,7 @@ const Header = () => {
               </li>
 
               <li className="nav-item bg-danger p-2">
-                <Link className="nav-link text-white font-bold py-0" to="/projects">
+                <Link className="nav-link text-white font-bold py-0" to="/projects" onClick={handleMenuItemClick}>
                   Projects
                 </Link>
               </li>
