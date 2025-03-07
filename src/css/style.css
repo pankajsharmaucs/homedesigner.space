@@ -1136,3 +1136,22 @@ textarea#comment::placeholder {
     /* Adjust size of the icon */
     padding: 10px;
 }
+
+
+.swiper-button-prev {
+    left: 5%;
+    /* Adjust position for left arrow */
+}
+
+.swiper-button-next {
+    right: 5%;
+    /* Adjust position for right arrow */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    font-size: 24px;
+    /* Increase font size */
+    font-weight: bolder;
+    /* Make arrows bold */
+}

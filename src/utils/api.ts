@@ -1,6 +1,6 @@
 // src/utils/api.ts
 import axios from 'axios';
-import { BASE_API_URL, CREATE_PROJECT, GET_ALL_PROJECTS } from './constants';
+import { BASE_API_URL, CREATE_PROJECT, DELETE_PROJECT, GET_ALL_PROJECTS } from './constants';
 
 // Create axios instance
 const api = axios.create({
@@ -25,6 +25,17 @@ export const fetchProjects = async () => {
 export const createProject = async (data: any) => {
   try {
     const response = await api.post(CREATE_PROJECT, data); // Post to the relative path
+    return response.data;
+  } catch (error) {
+    console.error('Error creating Projects:', error);
+    throw error;
+  }
+};
+
+// Create a new Projects
+export const deleteProject = async (data: any) => {
+  try {
+    const response = await api.delete(DELETE_PROJECT, data); // Post to the relative path
     return response.data;
   } catch (error) {
     console.error('Error creating Projects:', error);

@@ -20,7 +20,7 @@ const ProjectCard = ({ project }: BlogCardProps) => {
       <div className="card-body">
         <h1 className="h2  font-bold">{project.title}</h1>
         <h5 className="">{project.description}</h5>
-        <Link to={`/project/${project._id}`} className="btn btn-dark w-100 py-3">
+        <Link to={`/project/${project._id}`} className="btn btn-dark w-100 py-1">
           Explore
         </Link>
       </div>

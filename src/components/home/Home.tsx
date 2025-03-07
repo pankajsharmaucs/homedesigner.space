@@ -1,5 +1,5 @@
 import { SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Pagination } from 'swiper/modules';
 import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 import { useState } from 'react';
 // import Card from '../card/Card';
@@ -19,9 +19,16 @@ const Home = () => {
         <div className="row p-0">
           <Swiper
             spaceBetween={10}
+            slidesPerView={1.2} // Show 80% of the current slide and part of the next one
+            centeredSlides={true} // Keep the current slide in the center
+            loop={true} // Enable looping
+            autoplay={{
+              delay: 3000, // Auto slide every 3 seconds
+              disableOnInteraction: false, // Keep autoplay running even after user interaction
+            }}
             navigation={true}
-            thumbs={{ swiper: thumbsSwiper }} // Link with thumbsSwiper
-            modules={[FreeMode, Navigation, Thumbs]}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs, Autoplay]}
             className="mySwiper2"
             onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)} // Update activeIndex when slide changes
           >
@@ -39,32 +46,23 @@ const Home = () => {
 
           </Swiper>
 
-          {/* Thumbs Swiper (thumbnail navigation) */}
           <Swiper
-            // onSwiper={setThumbsSwiper} // Set thumbsSwiper instance when initialized
             onSwiper={(swiper: SwiperClass) => setThumbsSwiper(swiper)}
             spaceBetween={1}
             freeMode={true}
             watchSlidesProgress={true}
+            centeredSlides={true} // Keeps the active thumbnail in the center
+            slideToClickedSlide={true} // Moves clicked thumbnail to center
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper m-2"
             breakpoints={{
-              0: {
-                slidesPerView: 3, // Show 3 slides for small screens
-              },
-              768: {
-                slidesPerView: 4, // Show 4 slides for medium screens
-              },
-              992: {
-                slidesPerView: 8, // Show 6 slides for large screens
-              },
+              0: { slidesPerView: 3 }, // Show 3 slides for small screens
+              768: { slidesPerView: 4 }, // Show 4 slides for medium screens
+              992: { slidesPerView: 8 }, // Show 8 slides for large screens
             }}
           >
-            {/* Thumbnail slides */}
             {slider.map((image, index) => (
-              <SwiperSlide key={index}
-                className={index === activeIndex ? 'mySwiperactive' : ''}
-              >
+              <SwiperSlide key={index} className={index === activeIndex ? 'mySwiperactive' : ''}>
                 <img
                   src={`/images/slider1/${image}`}
                   style={{ maxHeight: '70px' }}
@@ -75,7 +73,6 @@ const Home = () => {
           </Swiper>
 
           {/* Pagination element */}
-          <div className="swiper-pagination"></div>
         </div>
       </div>
 
@@ -94,7 +91,7 @@ const Home = () => {
                 of excellence and trust in everything we do.</h5>
               <div className="row justify-content-md-start justify-content-center">
                 <div className="read_bt1">
-                  <Link to="/about">All Projects</Link>
+                  <Link to="/about">Know More</Link>
                 </div>
               </div>
             </div>
@@ -147,13 +144,18 @@ const Home = () => {
           <div className="container">
             <div className="slider1">
               <Swiper
-                loop={true}
-                slidesPerView={'auto'}
                 spaceBetween={10}
-                pagination={{
-                  clickable: true,
+                slidesPerView={1.2} // Show 80% of the current slide and part of the next one
+                centeredSlides={true} // Keep the current slide in the center
+                loop={true} // Enable looping
+                autoplay={{
+                  delay: 3000, // Auto slide every 3 seconds
+                  disableOnInteraction: false, // Keep autoplay running even after user interaction
                 }}
-                className="mySwiper"
+                navigation={true}
+                thumbs={{ swiper: thumbsSwiper }}
+                modules={[FreeMode, Navigation, Thumbs, Autoplay]}
+                className="mySwiper2"
               >
                 <SwiperSlide>
                   <img src="/images/slider1/image1.jpg" alt="Quote Icon" />
@@ -182,7 +184,7 @@ const Home = () => {
               <div className="swiper-pagination"></div>
             </div>
 
-            <div className="row justify-content-md-start justify-content-center">
+            <div className="row  my-3 justify-content-center">
               <div className="read_bt1">
                 <Link to="/projects">All Projects</Link>
               </div>

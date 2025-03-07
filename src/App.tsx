@@ -11,6 +11,7 @@ import Contact from './components/common/Contact';
 import AddProjects from './components/admin/AddProjects';
 import ProjectList from './components/projects/ProjectList';
 import ProjectDetail from './components/projects/ProjectDetail';
+import ListProjects from './components/admin/ListProjects';
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path="/project/:id" element={<ProjectDetail />} />
         <Route path="/admin" element={<AdminDashboard />} />
         <Route path="/admin/add-projects" element={< AddProjects />} /> {/* new route */}
+        <Route path="/admin/list-projects" element={< ListProjects />} /> {/* new route */}
       </Routes>
       <Footer />
     </Router>
